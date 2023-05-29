@@ -26,7 +26,7 @@ if($type==1)
 	}
 	else
 	{
-		$info="Incorrect User ID or Password";
+		$info="Şifre ya da kullanıcı ID hatalı!";
 	}
 }
 elseif($type==2)
@@ -39,7 +39,7 @@ elseif($type==2)
 	}
 	else
 	{
-		$info="Incorrect User ID or Password";
+		$info="Şifre ya da kullanıcı ID hatalı!";
 	}
 }elseif($type==3)
 	{
@@ -51,7 +51,7 @@ elseif($type==2)
 	}
 	else
 	{
-		$info="Incorrect User ID or Password";
+		$info="Şifre ya da kullanıcı ID hatalı!";
 	}
 }
 ?>
