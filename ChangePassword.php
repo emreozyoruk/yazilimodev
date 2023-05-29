@@ -15,7 +15,7 @@ $p1=sha1($_POST['p1']);
 $p2=sha1($_POST['p2']);
 if($_POST['old']==NULL || $_POST['p1']==NULL || $_POST['p2']==NULL)
 {
-	//ASL ici bos durmai
+	//ASL ici bos durmali
 }
 else
 {
