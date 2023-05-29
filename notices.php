@@ -59,8 +59,8 @@ function MM_validateForm() { //v4.0
 </head>
 
 <body>
-<span class="head">Online Notice Control</span>
-<span style="float:right;"><a href="logout.php">Logout</a></span><br />
+<span class="head">Online Not Kontrol</span>
+<span style="float:right;"><a href="logout.php">Cikis</a></span><br />
 <hr style="clear:both;box-shadow:0px 0px 2px #000;" color="#FF6600" size="2" width="100%"/><br />
 <div align="center">
 <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" enctype="multipart/form-data" onsubmit="MM_validateForm('title','','R','notice','','R');return document.MM_returnValue">
