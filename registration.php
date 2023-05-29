@@ -189,10 +189,10 @@ function MM_validateForm() { //v4.0
 <tr><td class="labels">Year : </td><td>
 <select name="cyear" class="fields">
 <option value="NA" selected="selected" disabled="disabled">- Select Year -</option>
-<option value="1">First Year</option>
-<option value="2">Second Year</option>
-<option value="3">Third Year</option>
-<option value="4">Final Year</option>
+<option value="1">1.Yıl</option>
+<option value="2">2.Yıl</option>
+<option value="3">3.Yıl</option>
+<option value="4">4.Yıl</option>
 </select>
 
 </td></tr>
