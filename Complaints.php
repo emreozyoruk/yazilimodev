@@ -19,17 +19,17 @@ else
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>All Complaints</title>
+<title>Tum Sikayetler</title>
 <link href="scripts/styleASL.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<span class="head" style="float:left">Complaints Management Panel</span>
-<span style="float:right;"><a href="logout.php">Logout</a></span><br />
+<span class="head" style="float:left">Sikayet Yonetim Paneli</span>
+<span style="float:right;"><a href="logout.php">Cikis Yap</a></span><br />
 <hr style="clear:both;box-shadow:0px 0px 2px #000;" color="#FF6600" size="2" width="100%"/><br />
 <div align="center">
 <table cellpadding="3" cellspacing="3" class="formTable">
-<tr><th>Complaint</th><th>Complaint By</th><th>Date</th><th>Action</th></tr>
+<tr><th>Sikayet</th><th>Sikayet Eden</th><th>Tarih</th><th>Action</th></tr>
 <?php
 
 $sql=mysqli_query($techVegan,"SELECT * FROM complaints ORDER BY id DESC");
@@ -50,7 +50,7 @@ else
 <?php } ?> 
 
 </table>
-<a href="admin.php">Go Back</a>
+<a href="admin.php">Geri Git</a>
 </div>
 </body>
 
