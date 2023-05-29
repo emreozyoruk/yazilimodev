@@ -16,13 +16,13 @@ if(!isset($_SESSION['admin']))
 
 <body>
 <span class="head">Activate / Deactivate Student Accounts</span>
-<span style="float:right;"><a href="logout.php">Logout</a></span><br />
+<span style="float:right;"><a href="logout.php">Cikis</a></span><br />
 <hr style="clear:both;box-shadow:0px 0px 2px #000;" color="#FF6600" size="2" width="100%"/><br />
 
 <div align="center">
-<span class="Subhead">All Students</span><br />
+<span class="Subhead">Tum Ogrenciler</span><br />
 <table cellpadding="3" cellspacing="3" class="formTable">
-<tr><th class="tableHead">Roll No.</th><th>Name</th><th>Email</th><th>Contact No.</th><th>Branch</th><th>Year</th><th>Status</th><th>Delete</th></tr>
+<tr><th class="tableHead">Roll No </th><th> İsim</th><th>Email</th><th>Telefon No.</th><th>Dal</th><th>Yıl</th><th>Statu</th><th>Sil</th></tr>
 <?php
 include("config.php");
 $a=mysqli_query($techVegan,"SELECT * FROM registration ORDER BY roll ASC");
@@ -46,7 +46,7 @@ else
 }
 ?>
 
-</td><td><a href="delete.php?del=<?php echo $b['roll'];?>&p=1" onclick="return confirm('Are You Sure...?');" onmouseover="style.color='red'" onmouseout="style.color='brown'">Delete</td></tr>
+</td><td><a href="delete.php?del=<?php echo $b['roll'];?>&p=1" onclick="return confirm('Emin misin...?');" onmouseover="style.color='red'" onmouseout="style.color='brown'">Sil</td></tr>
 
 <?php
 }
