@@ -15,22 +15,22 @@ $p1=sha1($_POST['p1']);
 $p2=sha1($_POST['p2']);
 if($_POST['old']==NULL || $_POST['p1']==NULL || $_POST['p2']==NULL)
 {
-	//ASL Do Nothing
+	//ASL ici bos durmai
 }
 else
 {
 if($old!=$pass)
 {
-	$info="Incorrect Old Password";
+	$info="Eski sifreniz yanlis";
 }
 elseif($p1!=$p2)
 	{
-		$info="New Password Didn't Matched";
+		$info="Yeni sifre eslesmedi";
 	}
 	else
 	{
 		mysqli_query($techVegan,"UPDATE admin SET password='$p2' WHERE id='$id'");
-		$info="Successfully Changed your Password";
+		$info="Sifreniz basarili bir sekilde degistirildi.";
 	}
 
 }
