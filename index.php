@@ -59,7 +59,7 @@ elseif($type==2)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Online Notice Board</title>
+<title>Cevrimici Duyuru Panosu</title>
 <link href="scripts/styleASL.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 td {vertical-align:top;}
