@@ -52,7 +52,7 @@ elseif($p1!=$p2)
 <form method="post" action="">
 <table cellpadding="3" cellspacing="3" class="formTable">
 <tr><td colspan="2" class="info" align="center"><?php echo $info;?></td></tr>
-<tr><td class="labels">Enter Old Password :</td><td><input type="password" name="old" size="25" class="fields" /></td></tr>
+<tr><td class="labels">Eski sifrenizi girin:</td><td><input type="password" name="old" size="25" class="fields" /></td></tr>
 <tr><td class="labels">Enter New Password :</td><td><input type="password" name="p1" size="25" class="fields"  /></td></tr>
 <tr><td class="labels">Re-Type New Password :</td><td><input type="password" name="p2" size="25"  class="fields" /></td></tr>
 <tr><td colspan="2" align="center"><input type="submit" value="Change Password" class="button" /></td></tr>
