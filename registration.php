@@ -174,7 +174,7 @@ function MM_validateForm() { //v4.0
 <select name="branch" class="fields">
 	   <option value="NA" selected="selected" disabled="disabled">- - Select Branch - - </option>
        <option value="Civil Engineering">Civil Engineering</option>
-       <option value="Computer Engineering">Computer Engineering</option>
+       <option value="Computer Engineering">Bilgisayar Mühendisligi</option>
        <option value="Environmental Engineering">Environmental Engineering</option>
        <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
        <option value="Industrial Engineering">Industrial Engineering</option>
