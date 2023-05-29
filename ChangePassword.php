@@ -39,12 +39,12 @@ elseif($p1!=$p2)
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Change Password Wizard</title>
+<title>Sifre Degistirme Sihirbazi</title>
 <link href="scripts/styleASL.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<span class="head" style="float:left">Change Password Wizard</span>
+<span class="head" style="float:left">Sifre Degistirme Sihirbazi</span>
 <span style="float:right;"><a href="logout.php">Logout</a></span><br />
 
 <hr style="clear:both;box-shadow:0px 0px 2px #000;" color="#FF6600" size="2" width="100%"/><br />
@@ -53,12 +53,12 @@ elseif($p1!=$p2)
 <table cellpadding="3" cellspacing="3" class="formTable">
 <tr><td colspan="2" class="info" align="center"><?php echo $info;?></td></tr>
 <tr><td class="labels">Eski sifrenizi girin:</td><td><input type="password" name="old" size="25" class="fields" /></td></tr>
-<tr><td class="labels">Enter New Password :</td><td><input type="password" name="p1" size="25" class="fields"  /></td></tr>
-<tr><td class="labels">Re-Type New Password :</td><td><input type="password" name="p2" size="25"  class="fields" /></td></tr>
-<tr><td colspan="2" align="center"><input type="submit" value="Change Password" class="button" /></td></tr>
+<tr><td class="labels">Yeni sifrenizi girin :</td><td><input type="password" name="p1" size="25" class="fields"  /></td></tr>
+<tr><td class="labels">Yeni sifrenizi tekrar girin :</td><td><input type="password" name="p2" size="25"  class="fields" /></td></tr>
+<tr><td colspan="2" align="center"><input type="submit" value="Sifreyi Degistir" class="button" /></td></tr>
 </table>
 </form>
-<a href="admin.php">Go Back</a>
+<a href="admin.php">Geri Dön</a>
 
 </div>
 </body>
