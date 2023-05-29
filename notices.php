@@ -36,7 +36,7 @@ else
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Notice Control Pabel</title>
+<title>Not Kontrol Paneli</title>
 <link href="scripts/styleASL.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
 function MM_validateForm() { //v4.0
@@ -66,15 +66,15 @@ function MM_validateForm() { //v4.0
 <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" enctype="multipart/form-data" onsubmit="MM_validateForm('title','','R','notice','','R');return document.MM_returnValue">
 <table cellpadding="3" cellspacing="3" class="formTable">
 <tr><td colspan="2">
-<span class="Subhead">Add Notice</span>
+<span class="Subhead">Not Ekle</span>
 <hr />
 </td></tr>
 <tr><td colspan="2" class="info"><?php echo $info;?></td></tr>
 <tr><td class="labels">Access Type</td><td><select name="access" class="fields"><option disabled="disabled" selected="selected">- Select Access Type - </option><option value="0">Student</option><option value="1">Faculty</option></select></td></tr>
-<tr><td class="labels">Title</td><td><input name="title" type="text" class="fields" id="title" placeholder="Enter Title" size="45" /></td></tr>
+<tr><td class="labels">Title</td><td><input name="title" type="text" class="fields" id="title" placeholder="Baslik Giriniz" size="45" /></td></tr>
 <tr><td class="labels">Notice</td><td><textarea name="notice" cols="35" class="fields" id="notice" style="height:70px;font-family:'trebuchet MS';" placeholder="Enter Notice"></textarea></td></tr>
-<tr><td class="labels">Upload File</td><td><input type="file" name="file" size="45" class="button" placeholder="Select Document or Image File"/></td></tr>
-<tr><td colspan="2" align="center"><input type="submit" value="Submit" class="button" onclick="return confirm('Are You Sure...?');"/></td></tr>
+<tr><td class="labels">Upload File</td><td><input type="file" name="file" size="45" class="button" placeholder="Dosyayı Seciniz"/></td></tr>
+<tr><td colspan="2" align="center"><input type="submit" value="Submit" class="button" onclick="return confirm('Emin misin ? ');"/></td></tr>
 
 </table> 
 </form>
@@ -93,8 +93,8 @@ if($b['access']==0){echo "Student";}else{echo "Faculty";}
 ?>
 </td><td align="center"><a href="asl_uploads/<?php echo $b['file'];?>"><img src="images/dwd.png" height="30" width="30" /></a></td>
 <td>
-<a href="edit.php?edit=<?php echo $b['id'];?>" style="text-shadow:0px 0px 1px #000000;">Edit</a>
-<a href="notices.php?del=<?php echo $b['id'];?>" onclick="return confirm('Emin misiniz ?');" style="text-shadow:0px 0px 1px #000000;">Delete</a>
+<a href="edit.php?edit=<?php echo $b['id'];?>" style="text-shadow:0px 0px 1px #000000;">Düzenle</a>
+<a href="notices.php?del=<?php echo $b['id'];?>" onclick="return confirm('Emin misiniz ?');" style="text-shadow:0px 0px 1px #000000;">Sil</a>
 </td></tr>
 <?php } ?>
 </table>
