@@ -20,24 +20,24 @@ if($name==NULL || $day==NULL || $month==NULL || $year==NULL || $roll==NULL || $e
 }
 elseif(mysqli_num_rows($c)==1)
 		{
-			$info="User Already Registered ";
+			$info="Kullanici Zaten Kayitli ";
 		}
 		elseif($p1==$p2)
 		{	
 			$p3=sha1($p1);
 			$sql=mysqli_query($techVegan,"INSERT INTO registration(name,day,month,year,roll,email,contact,branch,cyear,password,date,status) VALUES('$name','$day','$month','$year','$roll','$email','$contact','$branch','$cyear','$p3','$date','0')");
-			$info="Successfully Registered User $name";
+			$info="Kullanici Basariyla Kaydedildi $name";
 		}
 		else
 		{
-			$info="Password Didn't Matched ";
+			$info="Sifre Eslesmedi ";
 		}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Registration Panel</title>
+<title>Ogrenci Kayit Paneli</title>
 <link href="scripts/styleASL.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
 function MM_validateForm() { //v4.0
@@ -61,14 +61,14 @@ function MM_validateForm() { //v4.0
 
 <body>
 <div align="center">
-<span class="head">Student Registration Panel</span> <br /><br />
+<span class="head">Ogrenci Kayit Paneli</span> <br /><br />
 <form action="" method="post" onsubmit="MM_validateForm('name','','R','roll','','RisNum','email','','RisEmail','contact','','RisNum','p1','','R','p2','','R');return document.MM_returnValue">
 <table cellpadding="3" cellspacing="3" class="formTable">
-<tr><td colspan="2" align="center" class="Subhead">Please Fill All The Details</td></tr>
+<tr><td colspan="2" align="center" class="Subhead">Lütfen Tum Detayları Doldurun</td></tr>
 <tr><td colspan="2" align="center" class="info"><?php echo $info;?></td></tr>
-<tr><td class="labels">Full Name : </td><td><input name="name" type="text" class="fields" id="name" placeholder="Enter Full Name" size="40"/></td></tr>
+<tr><td class="labels">İsim Soyisim : </td><td><input name="name" type="text" class="fields" id="name" placeholder="İsim Soyisim Girin" size="40"/></td></tr>
 
-<tr><td class="labels">Date of Birth : </td><td>
+<tr><td class="labels">Dogum Tarihi : </td><td>
 <select name="day" class="fields">
 <option value="NA" disabled="disabled" selected="selected">-Day-</option>
 <option value="1">1</option>
@@ -166,29 +166,29 @@ function MM_validateForm() { //v4.0
 <option value="2013">2013</option>
 <option value="2014">2014</option>
 <option value="2015">2015</option></select></td></tr>
-<tr><td class="labels">Roll No. : </td><td><input name="roll" type="text" class="fields" id="roll" placeholder="Enter Roll No." size="15"/></td></tr>
-<tr><td class="labels">E-Mail : </td><td><input name="email" type="text" class="fields" id="email" placeholder="Enter E-Mail ID" size="40"/></td></tr>
-<tr><td class="labels">Contact No. : </td><td><input name="contact" type="text" class="fields" id="contact" placeholder="Enter Mobile No." size="20" maxlength="10"/></td></tr>
+<tr><td class="labels">Roll No. : </td><td><input name="roll" type="text" class="fields" id="roll" placeholder="Roll No Girin" size="15"/></td></tr>
+<tr><td class="labels">E-Mail : </td><td><input name="email" type="text" class="fields" id="email" placeholder="E-Mail Adresi Girin" size="40"/></td></tr>
+<tr><td class="labels">Contact No. : </td><td><input name="contact" type="text" class="fields" id="contact" placeholder="Telefon Numarası Girin" size="20" maxlength="10"/></td></tr>
 
-<tr><td class="labels">Branch : </td><td>
+<tr><td class="labels">Dal: </td><td>
 <select name="branch" class="fields">
-	   <option value="NA" selected="selected" disabled="disabled">- - Select Branch - - </option>
-       <option value="Civil Engineering">Insaat Muhendisigi</option>
+	   <option value="NA" selected="selected" disabled="disabled">- - Dal Secin - - </option>
+       <option value="Civil Engineering">Insaat Muhendisligi</option>
        <option value="Computer Engineering">Bilgisayar Muhendisligi</option>
-       <option value="Environmental Engineering">Environmental Engineering</option>
-       <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
-       <option value="Industrial Engineering">Industrial Engineering</option>
-       <option value="Food Engineering">Food Engineering</option>
-       <option value="Geological Engineering">Geological Engineering</option>
-       <option value="Chemical Engineering">Chemical Engineering</option>
-       <option value="Mechanical Engineering">Mechanical Engineering</option>
-       <option value="Textile Sciences">Textile Sciences</option>
+       <option value="Environmental Engineering">Cevre Muhendisligi</option>
+       <option value="Electrical and Electronics Engineering">Elektrik ve Elektronik Muhendisligi</option>
+       <option value="Industrial Engineering">Endustri Muhendisligi</option>
+       <option value="Food Engineering">Gıda Muhendisligi</option>
+       <option value="Geological Engineering">Jeoloji Muhendisligi</option>
+       <option value="Chemical Engineering">Kimya Muhendisligi</option>
+       <option value="Mechanical Engineering">Makina Muhendisligi</option>
+       <option value="Textile Sciences">Tekstil Bilimleri</option>
        </select>
 </td></tr>
 
-<tr><td class="labels">Year : </td><td>
+<tr><td class="labels">Yıl : </td><td>
 <select name="cyear" class="fields">
-<option value="NA" selected="selected" disabled="disabled">- Select Year -</option>
+<option value="NA" selected="selected" disabled="disabled">- Yıl Secin -</option>
 <option value="1">1.Yıl</option>
 <option value="2">2.Yıl</option>
 <option value="3">3.Yıl</option>
