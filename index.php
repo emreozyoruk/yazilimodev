@@ -87,7 +87,7 @@ function MM_validateForm() { //v4.0
 <body>
 <div align="center">
 
-<span class="head">Online Notice Board</span>
+<span class="head">PAÜ Öğrenci Not Paylaşım Sitesi</span>
 <br />
 <marquee behavior="alternate" scrollamount="5" direction="left" class="marquee" onmouseover="this.stop();" onmouseout="this.start();">--Welcome To Online Notice Board & Notes Uploading & Downloading--  </marquee>
 <br /><br /><br /><br />
