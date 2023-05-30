@@ -41,7 +41,7 @@ if($b['status']==0)
 else
 {
 	?>
-    <a href="activation.php?s=<?php echo $b['roll'];?>&p=0">Deaktif</a>
+    <a href="activation.php?s=<?php echo $b['roll'];?>&p=0">Pasif</a>
 <?php
 }
 ?>
