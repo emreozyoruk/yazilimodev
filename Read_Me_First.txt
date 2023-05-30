@@ -1,4 +1,10 @@
+
+HOCAYA ATILMAYACAK DOSYA DİKKAT !!!!!
+
+
 Default Admin User ID and Password:
+
+
 Uer ID: admin123@gmail.com
 Password: 12345
 
