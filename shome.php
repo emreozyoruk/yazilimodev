@@ -28,7 +28,7 @@ $name=$b['name'];
 <div align="center">
 <table cellpadding="3" cellspacing="3" class="formTable">
 <tr><td>
-<span class="Subhead">Ogrenci Yorumlari</span><hr size="1" style="color:#00F;" /><br />
+<span class="Subhead">Ogrenci İşlemleri</span><hr size="1" style="color:#00F;" /><br />
 <a href="ViewNoticesStudent.php">Notlari Görüntüle</a><br />
 <a href="ChangePasswordStudent.php">Şifre Değiştir</a><br />
 <a href="ComplaintStudent.php">Şikayet Kutusu</a><br />
