@@ -29,7 +29,7 @@ else
 <hr style="clear:both;box-shadow:0px 0px 2px #000;" color="#FF6600" size="2" width="100%"/><br />
 <div align="center">
 <table cellpadding="3" cellspacing="3" class="formTable">
-<tr><th>Sikayet</th><th>Sikayet Eden</th><th>Tarih</th><th>Action</th></tr>
+<tr><th>Sikayet</th><th>Sikayet Eden</th><th>Tarih</th><th>Durum</th></tr>
 <?php
 
 $sql=mysqli_query($techVegan,"SELECT * FROM complaints ORDER BY id DESC");
@@ -40,13 +40,13 @@ while($a=mysqli_fetch_array($sql))
 <?php 
 if($a['access']==0)
 {
-	echo "Student";
+	echo "Öğrenci";
 }
 else
 {
-	echo "Faculty";
+	echo "Fakülte";
 }?>
-</td><td><?php echo $a['date'];?></td><td><a href="Complaints.php?del=<?php echo $a['id'];?>" onclick="return confirm('Are You Sure..?');" style="text-shadow:0px 0px 1px #000000;">Delete</a></td></tr>
+</td><td><?php echo $a['date'];?></td><td><a href="Complaints.php?del=<?php echo $a['id'];?>" onclick="return confirm('Emin Misin ?');" style="text-shadow:0px 0px 1px #000000;">Sil</a></td></tr>
 <?php } ?> 
 
 </table>
