@@ -10,19 +10,19 @@ if(!isset($_SESSION['admin']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Manage Student Accounts</title>
+<title>Fakülte Hesaplarını Düzenle</title>
 <link href="scripts/styleASL.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<span class="head">Activate / Deactivate Faculty Accounts</span>
-<span style="float:right;"><a href="logout.php">Logout</a></span><br />
+<span class="head">Aktif / Deaktif Fakülte Hesapları</span>
+<span style="float:right;"><a href="logout.php">Çıkış</a></span><br />
 <hr style="clear:both;box-shadow:0px 0px 2px #000;" color="#FF6600" size="2" width="100%"/><br />
 
 <div align="center">
-<span class="Subhead">All Faculties</span><br />
+<span class="Subhead">Tüm Fakülteler</span><br />
 <table cellpadding="3" cellspacing="3" class="formTable">
-<tr><th>Faculty ID </th><th>Name</th><th>Email</th><th>Contact No.</th><th>Status</th><th>Delete</th></tr>
+<tr><th>Fakülte ID</th><th>İsim</th><th>Email</th><th>Telefon Numarası</th><th>Durum</th><th>Sil</th></tr>
 <?php
 include("config.php");
 $a=mysqli_query($techVegan,"SELECT * FROM faculty ORDER BY fid ASC");
@@ -34,18 +34,18 @@ while($b=mysqli_fetch_array($a))
 <?php
 if($b['status']==0)
 {
-	?><a href="activation.php?s=<?php echo $b['fid'];?>&p=3">Activate</a>
+	?><a href="activation.php?s=<?php echo $b['fid'];?>&p=3">Aktif</a>
 <?php 
 } 
 else
 {
 	?>
-    <a href="activation.php?s=<?php echo $b['fid'];?>&p=4">Deactivate</a>
+    <a href="activation.php?s=<?php echo $b['fid'];?>&p=4">Deaktif</a>
 <?php
 }
 ?>
 
-</td><td><a href="delete.php?del=<?php echo $b['fid'];?>&p=2" onclick="return confirm('Are You Sure...?');" onmouseover="style.color='red'" onmouseout="style.color='brown'">Delete</td></tr></tr>
+</td><td><a href="delete.php?del=<?php echo $b['fid'];?>&p=2" onclick="return confirm('Emin Misin ?');" onmouseover="style.color='red'" onmouseout="style.color='brown'">Sil</td></tr></tr>
 
 <?php
 }
@@ -55,7 +55,7 @@ else
 
 
 </table>
-<a href="admin.php">Go Back</a>
+<a href="admin.php">Geri Dön</a>
 </div>
 </body>
 
