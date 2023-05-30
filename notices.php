@@ -59,8 +59,8 @@ function MM_validateForm() { //v4.0
 </head>
 
 <body>
-<span class="head">Online Not Kontrol</span>
-<span style="float:right;"><a href="logout.php">Cikis</a></span><br />
+<span class="head">--Çevrimiçi Not Kontrol--</span>
+<span style="float:right;"><a href="logout.php">Çıkış</a></span><br />
 <hr style="clear:both;box-shadow:0px 0px 2px #000;" color="#FF6600" size="2" width="100%"/><br />
 <div align="center">
 <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" enctype="multipart/form-data" onsubmit="MM_validateForm('title','','R','notice','','R');return document.MM_returnValue">
@@ -70,17 +70,17 @@ function MM_validateForm() { //v4.0
 <hr />
 </td></tr>
 <tr><td colspan="2" class="info"><?php echo $info;?></td></tr>
-<tr><td class="labels">Access Type</td><td><select name="access" class="fields"><option disabled="disabled" selected="selected">- Select Access Type - </option><option value="0">Student</option><option value="1">Faculty</option></select></td></tr>
-<tr><td class="labels">Title</td><td><input name="title" type="text" class="fields" id="title" placeholder="Baslik Giriniz" size="45" /></td></tr>
-<tr><td class="labels">Notice</td><td><textarea name="notice" cols="35" class="fields" id="notice" style="height:70px;font-family:'trebuchet MS';" placeholder="Enter Notice"></textarea></td></tr>
-<tr><td class="labels">Upload File</td><td><input type="file" name="file" size="45" class="button" placeholder="Dosyayı Seciniz"/></td></tr>
-<tr><td colspan="2" align="center"><input type="submit" value="Submit" class="button" onclick="return confirm('Emin misin ? ');"/></td></tr>
+<tr><td class="labels">Ulaşabilecek Tip</td><td><select name="access" class="fields"><option disabled="disabled" selected="selected">- Tipi Seç - </option><option value="0">Öğrenci</option><option value="1">Fakülte</option></select></td></tr>
+<tr><td class="labels">Başlık</td><td><input name="title" type="text" class="fields" id="title" placeholder="Başlık Giriniz" size="45" /></td></tr>
+<tr><td class="labels">Notlar</td><td><textarea name="notice" cols="35" class="fields" id="notice" style="height:70px;font-family:'trebuchet MS';" placeholder="Notu Giriniz"></textarea></td></tr>
+<tr><td class="labels">Dosya Yükle</td><td><input type="file" name="file" size="45" class="button" placeholder="Yüklenicek Dosyayı Seçiniz"/></td></tr>
+<tr><td colspan="2" align="center"><input type="submit" value="Onayla" class="button" onclick="return confirm('Emin Misiniz ?');"/></td></tr>
 
 </table> 
 </form>
 <br>
 <table cellpadding="3" cellspacing="3" class="formTable">
-<tr><th>ID</th><th>Title</th><th>Notice</th><th>Access Type</th><th>Download</th><th>Action</th></tr>
+<tr><th>Numara</th><th>Başlık</th><th>Not</th><th>Ulaşabilecek Tip</th><th>Yükle</th><th>Hareket</th></tr>
 <?php 
 $a=mysqli_query($techVegan,"SELECT * FROM notices ORDER BY id DESC");
 while($b=mysqli_fetch_array($a))
@@ -89,7 +89,7 @@ while($b=mysqli_fetch_array($a))
 <tr class="info"><td><?php echo $b['id'];?></td><td><?php echo $b['title'];?></td><td><?php echo $b['notice'];?></td>
 <td>
 <?php 
-if($b['access']==0){echo "Student";}else{echo "Faculty";}
+if($b['access']==0){echo "Öğrenci";}else{echo "Fakülte";}
 ?>
 </td><td align="center"><a href="asl_uploads/<?php echo $b['file'];?>"><img src="images/dwd.png" height="30" width="30" /></a></td>
 <td>
