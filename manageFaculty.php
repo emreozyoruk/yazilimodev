@@ -15,7 +15,7 @@ if(!isset($_SESSION['admin']))
 </head>
 
 <body>
-<span class="head">Aktif / Deaktif Fakülte Hesapları</span>
+<span class="head">Aktif / Pasif Fakülte Hesapları</span>
 <span style="float:right;"><a href="logout.php">Çıkış</a></span><br />
 <hr style="clear:both;box-shadow:0px 0px 2px #000;" color="#FF6600" size="2" width="100%"/><br />
 
