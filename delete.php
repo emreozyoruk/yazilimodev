@@ -1,4 +1,5 @@
 <?php
+
 include("config.php");
 
 $id=$_GET['del'];
