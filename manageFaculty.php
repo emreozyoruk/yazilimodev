@@ -40,7 +40,7 @@ if($b['status']==0)
 else
 {
 	?>
-    <a href="activation.php?s=<?php echo $b['fid'];?>&p=4">Deaktif</a>
+    <a href="activation.php?s=<?php echo $b['fid'];?>&p=4">Pasif</a>
 <?php
 }
 ?>
