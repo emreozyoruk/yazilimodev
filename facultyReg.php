@@ -17,24 +17,24 @@ if($name==NULL || $day==NULL || $month==NULL || $year==NULL || $fid==NULL || $em
 }
 elseif(mysqli_num_rows($c)==1)
 		{
-			$info="User Already Registered ";
+			$info="Kullanıcı Zaten Kayıtlı";
 		}
 		elseif($p1==$p2)
 		{	
 			$p3=sha1($p1);
 			$sql=mysqli_query($techVegan,"INSERT INTO faculty(name,day,month,year,fid,email,contact,password,date,status) VALUES('$name','$day','$month','$year','$fid','$email','$contact','$p3','$date','0')");
-			$info="Successfully Registered User $name";
+			$info="Başarıyla Kayıt Edildi $name";
 		}
 		else
 		{
-			$info="Password Didn't Matched ";
+			$info="Şifre Eşleşmiyor";
 		}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Faculty Registration Panel</title>
+<title>Fakülte Kayıt Platformu</title>
 <link href="scripts/styleASL.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
 function MM_validateForm() { //v4.0
@@ -58,16 +58,16 @@ function MM_validateForm() { //v4.0
 
 <body>
 <div align="center">
-<span class="head">Faculty Registration Panel</span> <br /><br />
+<span class="head">Fakülte Kayıt Paneli</span> <br /><br />
 <form action="<?php $_SERVER['PHP_SELF'];?>" method="post" onsubmit="MM_validateForm('name','','R','fid','','RisNum','email','','RisEmail','contact','','RisNum','p1','','R','p2','','R');return document.MM_returnValue">
 <table cellpadding="3" cellspacing="3" class="formTable">
-<tr><td colspan="2" align="center" class="Subhead">Please Fill All The Details</td></tr>
+<tr><td colspan="2" align="center" class="Subhead">Tüm Detayları Doldurunuz</td></tr>
 <tr><td colspan="2" align="center" class="info"><?php echo $info;?></td></tr>
-<tr><td class="labels">Full Name : </td><td><input name="name" type="text" class="fields" id="name" placeholder="Enter Full Name" size="40"/></td></tr>
+<tr><td class="labels">İsim : </td><td><input name="name" type="text" class="fields" id="name" placeholder="İsmi Giriniz" size="40"/></td></tr>
 
-<tr><td class="labels">Date of Birth : </td><td>
+<tr><td class="labels">Kuruluş Tarihi:  </td><td>
 <select name="day" class="fields">
-<option value="NA" disabled="disabled" selected="selected">-Day-</option>
+<option value="NA" disabled="disabled" selected="selected">-Gün-</option>
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -101,22 +101,22 @@ function MM_validateForm() { //v4.0
 <option value="31">31</option>
 </select>
 <select name="month" class="fields">
-<option value="NA" disabled="disabled" selected="selected">-Month-</option>
-<option value="JAN">JAN</option>
-<option value="FEB">FEB</option>
-<option value="MAR">MAR</option>
-<option value="APR">APR</option>
-<option value="MAY">MAY</option>
-<option value="JUN">JUN</option>
-<option value="JUL">JUL</option>
-<option value="AUG">AUG</option>
-<option value="SEP">SEP</option>
-<option value="OCT">OCT</option>
-<option value="NOV">NOV</option>
-<option value="DEC">DEC</option>
+<option value="NA" disabled="disabled" selected="selected">-Ay-</option>
+<option value="JAN">Ocak</option>
+<option value="FEB">Şubat</option>
+<option value="MAR">Mart</option>
+<option value="APR">Nisan</option>
+<option value="MAY">Mayıs</option>
+<option value="JUN">Haziran</option>
+<option value="JUL">Temmuz</option>
+<option value="AUG">Ağustos</option>
+<option value="SEP">Eylül</option>
+<option value="OCT">Ekim</option>
+<option value="NOV">Kasım</option>
+<option value="DEC">Aralık</option>
 </select>
 <select name="year" class="fields">
-<option value="NA" disabled="disabled" selected="selected">-Year-</option>
+<option value="NA" disabled="disabled" selected="selected">-Yıl-</option>
 <option value="1970">1970</option>
 <option value="1971">1971</option>
 <option value="1972">1972</option>
@@ -163,15 +163,15 @@ function MM_validateForm() { //v4.0
 <option value="2013">2013</option>
 <option value="2014">2014</option>
 <option value="2015">2015</option></select></td></tr>
-<tr><td class="labels">Faculty ID : </td><td><input name="fid" type="text" class="fields" id="fid" placeholder="Enter Faculty ID" size="15"/></td></tr>
-<tr><td class="labels">E-Mail : </td><td><input name="email" type="text" class="fields" id="email" placeholder="Enter E-Mail ID" size="40"/></td></tr>
-<tr><td class="labels">Contact No. : </td><td><input name="contact" type="text" class="fields" id="contact" placeholder="Enter Mobile No." size="20" maxlength="10"/></td></tr>
-<tr><td class="labels">Password : </td><td><input name="p1" type="password" class="fields" id="p1" placeholder="Enter Password" size="30"/></td></tr>
-<tr><td class="labels">Re-Type Password : </td><td><input name="p2" type="password" class="fields" id="p2" placeholder="Re-Type Password" size="30"/></td></tr>
-<tr><td align="center" colspan="2"><input type="submit" value="Register" class="button" onclick="return confirm('Please Confirm All Fields Before Submitting');" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear"  class="button" onclick="return confirm('Are You Sure...?');"/></td></tr>
+<tr><td class="labels">Fakülte ID : </td><td><input name="fid" type="text" class="fields" id="fid" placeholder="Fakülte ID Giriniz" size="15"/></td></tr>
+<tr><td class="labels">E-Mail : </td><td><input name="email" type="text" class="fields" id="email" placeholder="Mail Giriniz" size="40"/></td></tr>
+<tr><td class="labels">Telefon Numarası: </td><td><input name="contact" type="text" class="fields" id="contact" placeholder="Telefon Numarasını Giriniz" size="20" maxlength="10"/></td></tr>
+<tr><td class="labels">Şifre : </td><td><input name="p1" type="password" class="fields" id="p1" placeholder="Şifreyi Giriniz" size="30"/></td></tr>
+<tr><td class="labels">Şifre Tekrar : </td><td><input name="p2" type="password" class="fields" id="p2" placeholder="Şifreyi Tekrar Giriniz" size="30"/></td></tr>
+<tr><td align="center" colspan="2"><input type="submit" value="Kayıt Ol" class="button" onclick="return confirm('Göndermeden Tüm Alanları Onaylayınız');" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Temizle"  class="button" onclick="return confirm('Emin Misiniz ?');"/></td></tr>
 </table>
 </form><br />
-<a href="index.php">Go Back</a>
+<a href="index.php">Geri Dön</a>
 </div>
 </body>
 </html>
