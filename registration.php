@@ -70,7 +70,7 @@ function MM_validateForm() { //v4.0
 
 <tr><td class="labels">Dogum Tarihi : </td><td>
 <select name="day" class="fields">
-<option value="NA" disabled="disabled" selected="selected">-Day-</option>
+<option value="NA" disabled="disabled" selected="selected">-Gün-</option>
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -119,7 +119,7 @@ function MM_validateForm() { //v4.0
 <option value="DEC">ARALIK</option>
 </select>
 <select name="year" class="fields">
-<option value="NA" disabled="disabled" selected="selected">-Year-</option>
+<option value="NA" disabled="disabled" selected="selected">-Yıl-</option>
 <option value="1970">1970</option>
 <option value="1971">1971</option>
 <option value="1972">1972</option>
@@ -166,13 +166,13 @@ function MM_validateForm() { //v4.0
 <option value="2013">2013</option>
 <option value="2014">2014</option>
 <option value="2015">2015</option></select></td></tr>
-<tr><td class="labels">Roll No. : </td><td><input name="roll" type="text" class="fields" id="roll" placeholder="Roll No Girin" size="15"/></td></tr>
+<tr><td class="labels">Giriş ID : </td><td><input name="roll" type="text" class="fields" id="roll" placeholder="Giriş ID Giriniz" size="15"/></td></tr>
 <tr><td class="labels">E-Mail : </td><td><input name="email" type="text" class="fields" id="email" placeholder="E-Mail Adresi Girin" size="40"/></td></tr>
-<tr><td class="labels">Contact No. : </td><td><input name="contact" type="text" class="fields" id="contact" placeholder="Telefon Numarası Girin" size="20" maxlength="10"/></td></tr>
+<tr><td class="labels">Telefon Numarası : </td><td><input name="contact" type="text" class="fields" id="contact" placeholder="Telefon Numarası Girin" size="20" maxlength="10"/></td></tr>
 
-<tr><td class="labels">Dal: </td><td>
+<tr><td class="labels">Bölüm: </td><td>
 <select name="branch" class="fields">
-	   <option value="NA" selected="selected" disabled="disabled">- - Dal Secin - - </option>
+	   <option value="NA" selected="selected" disabled="disabled">- - Bölüm Secin - - </option>
        <option value="Civil Engineering">Insaat Muhendisligi</option>
        <option value="Computer Engineering">Bilgisayar Muhendisligi</option>
        <option value="Environmental Engineering">Cevre Muhendisligi</option>
@@ -198,12 +198,12 @@ function MM_validateForm() { //v4.0
 </td></tr>
 
 
-<tr><td class="labels">Password : </td><td><input name="p1" type="password" class="fields" id="p1" placeholder="Enter Password" size="30"/></td></tr>
-<tr><td class="labels">Re-Type Password : </td><td><input name="p2" type="password" class="fields" id="p2" placeholder="Re-Type Password" size="30"/></td></tr>
-<tr><td align="center" colspan="2"><input type="submit" value="Register" class="button" onclick="return confirm('Please Confirm All Fields Before Submitting');" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Clear"  class="button" onclick="return confirm('Are You Sure...?');"/></td></tr>
+<tr><td class="labels">Şifre : </td><td><input name="p1" type="password" class="fields" id="p1" placeholder="Şifre Giriniz" size="30"/></td></tr>
+<tr><td class="labels">Tekrar Şifre : </td><td><input name="p2" type="password" class="fields" id="p2" placeholder="Şifreyi Tekrar Giriniz" size="30"/></td></tr>
+<tr><td align="center" colspan="2"><input type="submit" value="Kayıt Ol" class="button" onclick="return confirm('Boşlukların hepsinin dolu oldugundan emin olun');" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Temizle"  class="button" onclick="return confirm('Emin Misin ?');"/></td></tr>
 </table>
 </form><br />
-<a href="index.php">Go Back</a>
+<a href="index.php">Geri Dön</a>
 </div>
 </body>
 
