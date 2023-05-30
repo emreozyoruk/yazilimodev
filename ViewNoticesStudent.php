@@ -10,17 +10,17 @@ if(!isset($_SESSION['sid']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>View Notices</title>
+<title>Not Görüntüle</title>
 <link href="scripts/styleASL.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-<span class="head" style="float:left">View Notices</span>
-<span style="float:right;"><a href="logout.php">Logout</a></span><br />
+<span class="head" style="float:left">Not Görüntüle</span>
+<span style="float:right;"><a href="logout.php">Çıkış</a></span><br />
 <hr style="clear:both;box-shadow:0px 0px 2px #000;" color="#FF6600" size="2" width="100%"/><br />
 <div align="center">
 <table cellpadding="3" cellspacing="3" class="formTable">
-<tr><th>Title</th><th>Notices</th><th>Download</th><th>Date</th></tr>
+<tr><th>Başlık</th><th>Notlar</th><th>İndir</th><th>Tarih</th></tr>
 <?php
 $sql=mysqli_query($techVegan,"SELECT * FROM notices WHERE access='0' ORDER BY id DESC");
 while($a=mysqli_fetch_array($sql))
@@ -32,7 +32,7 @@ while($a=mysqli_fetch_array($sql))
 }
 ?>
 </table>
-<a href="shome.php">Go Back</a>
+<a href="shome.php">Geri Dön</a>
 </div>
 </body>
 
