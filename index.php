@@ -85,24 +85,25 @@ function MM_validateForm() { //v4.0
 </head>
 
 <body>
+
 <div align="center">
 
 <span class="head">PAÜ Öğrenci Not Paylaşım Sitesi</span>
 <br />
-<marquee behavior="alternate" scrollamount="5" direction="left" class="marquee" onmouseover="this.stop();" onmouseout="this.start();">--Welcome To Online Notice Board & Notes Uploading & Downloading--  </marquee>
+<marquee behavior="alternate" scrollamount="5" direction="left" class="marquee" onmouseover="this.stop();" onmouseout="this.start();">--Çevrimiçi not paylaşım platformuna hoş geldiniz--  </marquee>
 <br /><br /><br /><br />
 <form action="" method="post" onsubmit="MM_validateForm('id','','R','pass','','R');return document.MM_returnValue">
 <table cellpadding="3" cellspacing="3" class="formTable">
-<tr><td colspan="2" align="center" class="Subhead"><marquee behavior="alternate" scrollamount="2" width="150" direction="left" onmouseover="this.stop();" onmouseout="this.start();">ONB Login</marquee></td></tr>
+<tr><td colspan="2" align="center" class="Subhead"><marquee behavior="alternate" scrollamount="2" width="150" direction="left" onmouseover="this.stop();" onmouseout="this.start();">Giriş Ekranı</marquee></td></tr>
 <tr><td colspan="2" align="center" class="info"><?php echo $info;?></td></tr>
-<tr><td class="labels">User Type : </td><td><select name="type" class="fields"><option disabled="disabled" selected="selected">- Select User Type -</option><option value="1">Student</option><option value="2">Faculty</option><option value="3">Admin</option></select></td></tr>
-<tr><td class="labels">User ID : </td><td><input name="id" type="text" class="fields" id="id" placeholder="Enter User ID" size="20"/></td></tr>
-<tr><td class="labels">Password : </td><td><input name="pass" type="password" class="fields" id="pass" placeholder="Enter Password" size="20"/></td></tr>
-<tr><td colspan="2" align="center"><input type="submit" value="Login" class="button"/></td></tr>
+<tr><td class="labels">Kullanıcı Tipi : </td><td><select name="type" class="fields"><option disabled="disabled" selected="selected">- Tipi Seçiniz -</option><option value="1">Öğrenci</option><option value="2">Fakülte</option><option value="3">Admin</option></select></td></tr>
+<tr><td class="labels">Kullanıcı Adı : </td><td><input name="id" type="text" class="fields" id="id" placeholder="Kullanıcı Adını Giriniz" size="20"/></td></tr>
+<tr><td class="labels">Şifre : </td><td><input name="pass" type="password" class="fields" id="pass" placeholder="Şifreyi Giriniz" size="20"/></td></tr>
+<tr><td colspan="2" align="center"><input type="submit" value="Giriş" class="button"/></td></tr>
 </table>
 </form><br />
-<span style="font-family:'trebuchet MS';font-size:16px;color:#900;">New Student?</span> <a href="registration.php">Register Here</a><br />
-<span style="font-family:'trebuchet MS';font-size:16px;color:#900;">New Faculty?</span> <a href="facultyReg.php">Register Here</a>
+<span style="font-family:'trebuchet MS';font-size:16px;color:#900;">Yeni Öğrenci ?</span> <a href="registration.php">Buraya Tıkla</a><br />
+<span style="font-family:'trebuchet MS';font-size:16px;color:#900;">Yeni Fakülte ?</span> <a href="facultyReg.php">Buraya Tıkla</a>
 </div>
 </body>
 </html>
