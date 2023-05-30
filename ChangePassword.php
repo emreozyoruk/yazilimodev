@@ -45,7 +45,7 @@ elseif($p1!=$p2)
 
 <body>
 <span class="head" style="float:left">Sifre Degistirme Sihirbazi</span>
-<span style="float:right;"><a href="logout.php">Logout</a></span><br />
+<span style="float:right;"><a href="logout.php">Çıkış</a></span><br />
 
 <hr style="clear:both;box-shadow:0px 0px 2px #000;" color="#FF6600" size="2" width="100%"/><br />
 <div align="center">
