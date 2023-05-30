@@ -3,6 +3,7 @@ include("config.php");
 $id=$_GET['s'];
 $p=$_GET['p'];
 
+
 if($p==1)
 {
 	$sql=mysqli_query($techVegan,"UPDATE registration SET status='1' WHERE roll='$id'");	
