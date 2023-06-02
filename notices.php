@@ -19,7 +19,7 @@ else
 	$filename="$title".".$extension";
 	move_uploaded_file($_FILES["file"]["tmp_name"],"asl_uploads/$filename"); 
 	mysqli_query($techVegan,"INSERT INTO notices(title,notice,file,date,access) VALUES('$title','$notice','$filename','$date','$access')");
-	$info="Successfully Submitted Notice";
+	$info="Notunuz Başarılı Bir Şekilde Kayıt Edildi";
 
 }
 $del=$_GET['del'];
